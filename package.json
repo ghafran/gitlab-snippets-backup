@@ -1,0 +1,25 @@
+{
+    "name": "gitlab-snippets-backup",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ghafran/gitlab-snippets-backup.git"
+    },
+    "author": "Ghafran Abbas <ghafranabbas@gmail.com> (https://github.com/ghafran)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ghafran/gitlab-snippets-backup/issues"
+    },
+    "homepage": "https://github.com/ghafran/gitlab-snippets-backup#readme",
+    "dependencies": {
+        "bluebird": "^3.5.3",
+        "lodash": "^4.17.11",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.2"
+    }
+}
