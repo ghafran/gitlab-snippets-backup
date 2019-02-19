@@ -26,6 +26,8 @@ if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
 }
 
+console.log(`snippets will be saved to ${dir}`);
+
 rp({
     method: 'GET',
     uri: `${url}/api/v4/snippets/public`,
@@ -44,9 +46,12 @@ rp({
                 'PRIVATE-TOKEN': token
             }
         }).then((raw) => {
+            console.log(`saving snippet ${snippet.id}...`);
             fs.writeFileSync(`${dir}/${filename}`, raw);
         });
     });
+}).then(() => {
+    console.log(`done.`);
 }).catch((err) => {
     console.error(err);
 });
