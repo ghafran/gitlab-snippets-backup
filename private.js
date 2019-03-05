@@ -30,7 +30,7 @@ console.log(`snippets will be saved to ${dir}`);
 
 rp({
     method: 'GET',
-    uri: `${url}/api/v4/snippets`,
+    uri: `${url}/api/v4/snippets?per_page=200&page=1`,
     headers: {
         'PRIVATE-TOKEN': token
     },
