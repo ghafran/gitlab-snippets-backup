@@ -39,6 +39,7 @@ rp({
     fs.writeFileSync(`${dir}/snippets.json`, JSON.stringify(snippets));
     return promise.mapSeries(snippets, (snippet) => {
         var filename = `${snippet.id}-${snippet.title}`;
+        filename = filename.replace(/\//g, "-");
         return rp({
             method: 'GET',
             uri: `${url}/snippets/${snippet.id}/raw`,
