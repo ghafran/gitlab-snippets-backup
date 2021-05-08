@@ -18,7 +18,7 @@
     "homepage": "https://github.com/ghafran/gitlab-snippets-backup#readme",
     "dependencies": {
         "bluebird": "^3.5.3",
-        "lodash": "^4.17.19",
+        "lodash": "^4.17.21",
         "request": "^2.88.0",
         "request-promise": "^4.2.2"
     }
